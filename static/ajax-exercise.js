@@ -19,7 +19,8 @@ function showWeather(evt) {
   const formData = {zipcode: $('#zipcode-field').val()};
 
   $.get(url, formData, response => {
-    $('#weather-info').text(`Your forecast is: ${response.forecast}`)
+    // $('#weather-info').text(`Your forecast is: ${response.forecast}`)
+    alert(`Your forecast is: ${response.forecast}\nAnd the temperature will be: ${response.temp}`)
   });
 }
 
