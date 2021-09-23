@@ -44,7 +44,7 @@ function orderMelons(evt) {
     console.log(orderCode)
 
     if (orderCode === 'ERROR'){
-      orderStatus.css('color', 'red')
+      orderStatus.addClass('order-error')
     }
 
     orderStatus.html(response.msg);
